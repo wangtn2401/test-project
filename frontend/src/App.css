@@ -1,72 +1,87 @@
-.App {
-  margin: 2rem;
+.App form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
 }
 
-input[type="text"] {
-  padding: 0.5rem;
+.App form input[type="text"]{
+  border: 2px solid #ccc;
   border-radius: 4px;
-  border: 1px solid #ccc;
-  font-size: 1rem;
-  width: 100%;
-  max-width: 400px;
+  padding: 8px;
+  font-weight: bold;
+  width: 300px;
+  margin-right: 10px;
 }
-
-button[type="submit"] {
-  margin-left: 1rem;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
+.App form button[type="submit"] {
+  margin: 0 10px;
+  padding: 10px;
   border: none;
-  background-color: #007bff;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+.App form input[type="text"] {
+  width: 300px;
+}
+
+.App form button[type="submit"] {
+  background-color: #0066cc;
   color: #fff;
-  font-size: 1rem;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.App form button[type="submit"]:hover {
+  background-color: #0052a3;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.seatGeek-card,
+.stubHub-card,
+.ticketMaster-card {
+  margin: 0 auto;
 }
 
 .result-card {
-  padding: 1rem;
-  border-radius: 10px;
   border: 1px solid #ccc;
-  background-color: #fff;
-  height: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease-in-out;
 }
-.result-card p:first-of-type {
-  font-size: 18px;
-  font-weight: bold;
+
+.result-card:hover {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.result-card p {
   margin: 0;
+  padding: 5px 0;
 }
 
-a {
-  display: inline-block;
-  padding: 8px 12px;
-  background-color: #4caf50;
-  color: #fff;
+.result-card a {
+  display: block;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
   text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
+  color: #333;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
 }
 
-a:hover {
-  background-color: #3e8e41;
-}
-h2 {
-  margin: 2rem 0 1rem;
-}
-
-.stubHub-card {
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  background-color: #efb670;
-  height: 60%;
-}
-.seatGeek-card{
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  background-color: #f1e099;
-  height: 60%;
-}
-.ticketMaster-card{
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  background-color: #a6fc9e;
-  height: 60%;
+.result-card a:hover {
+  background-color: #eee;
 }

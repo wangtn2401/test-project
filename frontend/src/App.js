@@ -36,7 +36,7 @@ function App() {
       {isLoading && <div className="loading">Loading...</div>}
       <Grid container spacing={2}>
         <Grid item xs={12} >
-          <h2>SeatGeek Results</h2>
+          {/* <h2>SeatGeek Results</h2> */}
           <Grid container spacing={2} className="seatGeek-card">
             {results.json_result_seatgeek.map((result, index) => (
               <Grid item xs={4} key={index}>
@@ -55,7 +55,7 @@ function App() {
           </Grid>
         </Grid>
         <Grid item xs={12} >
-          <h2>StubHub Results</h2>
+          {/* <h2>StubHub Results</h2> */}
           <Grid container spacing={2} className="stubHub-card">
             {results.json_result_stubhub.map((result, index) => (
               <Grid item xs={4} key={index}>
@@ -74,7 +74,7 @@ function App() {
           </Grid>
         </Grid>
         <Grid item xs={12}>
-          <h2>Ticketmaster Results</h2>
+          {/* <h2>Ticketmaster Results</h2> */}
           <Grid container spacing={2} className="ticketMaster-card">
             {results.json_result_ticketmaster.map((result, index) => (
               <Grid item xs={4} key={index}>
