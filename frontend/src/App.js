@@ -10,15 +10,16 @@ function App() {
     json_result_stubhub: [],
     json_result_ticketmaster: [],
   });
-
+  const [isLoading, setIsLoading] = useState(false);
   const handleSearch = async (event) => {
     event.preventDefault();
-
+    setIsLoading(true);
     const response = await axios.get(
       `http://localhost:5000/search?query=${searchTerm}`
     );
-
     setResults(response.data);
+    setIsLoading(false);
+
   };
 
   return (
@@ -32,6 +33,7 @@ function App() {
         />
         <button type="submit">Search</button>
       </form>
+      {isLoading && <div className="loading">Loading...</div>}
       <Grid container spacing={2}>
         <Grid item xs={12} >
           <h2>SeatGeek Results</h2>
