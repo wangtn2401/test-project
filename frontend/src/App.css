@@ -80,6 +80,7 @@
   color: #333;
   font-weight: bold;
   transition: background-color 0.3s ease-in-out;
+  background-color: #2ff166;
 }
 
 .result-card a:hover {
