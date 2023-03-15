@@ -5,7 +5,7 @@
   margin: 20px 0;
 }
 
-.App form input[type="text"]{
+.App form input[type="text"] {
   border: 2px solid #ccc;
   border-radius: 4px;
   padding: 8px;
@@ -13,6 +13,7 @@
   width: 300px;
   margin-right: 10px;
 }
+
 .App form button[type="submit"] {
   margin: 0 10px;
   padding: 10px;
@@ -102,6 +103,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(359deg);
   }

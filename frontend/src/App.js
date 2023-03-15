@@ -16,7 +16,7 @@ function App() {
     event.preventDefault();
     setIsLoading(true);
     const response = await axios.get(
-      `http://localhost:5000/search?query=${searchTerm}`
+      `http://localhost:5000/search2?query=${searchTerm}`
     );
     setResults(response.data);
     setIsLoading(false);

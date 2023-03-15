@@ -21,6 +21,15 @@ def index():
 @app.route("/search")
 def search():
     query = request.args.get("query")
+    result_seatgeek = get_data_frame_from_seatgeek(query)
+    result_ticketmaster = get_data_frame_from_ticketmaster(query)
+    result_stubhub = get_data_frame_from_stubhub(query)
+    return render_template("comparison_table.html", template1=render_template("results.html", result=result_ticketmaster.to_dict(orient='records'), tablename='seatgeek'), template2=render_template("results.html", result=result_seatgeek.to_dict(orient='records'), tablename="ticketmaster"), template3=render_template("results.html", result=result_stubhub.to_dict(orient='records'), tablename="stubhub"))
+
+
+@app.route("/search2")
+def search2():
+    query = request.args.get("query")
     try:
         result_seatgeek = get_data_frame_from_seatgeek(query)
         result_ticketmaster = get_data_frame_from_ticketmaster(query)
@@ -40,7 +49,6 @@ def search():
         return jsonify(dict(json_result_seatgeek=json_result_seatgeek, json_result_ticketmaster=json_result_ticketmaster, json_result_stubhub=json_result_stubhub))
     except:
         return jsonify(dict(json_result_seatgeek=list(), json_result_ticketmaster=list(), json_result_stubhub=list()))
-    # return render_template("comparison_table.html", template1=render_template("results.html", result=result_ticketmaster.to_dict(orient='records'), tablename='seatgeek'), template2=render_template("results.html", result=result_seatgeek.to_dict(orient='records'), tablename="ticketmaster"),template3=render_template("results.html", result=result_stubhub.to_dict(orient='records'), tablename="stubhub"))
 
 
 if __name__ == "__main__":
