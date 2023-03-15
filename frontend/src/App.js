@@ -48,7 +48,7 @@ function App() {
                   <p><span className="result-title">minPrice: </span>{result.maxPrice}</p>
                   <p><span className="result-title">maxPrice: </span>{result.maxPrice}</p>
                   <p><span className="result-title">Time Zone: </span>{result.timeZone}</p>
-                  <a href={result.url}>Buy Tickets</a>
+                  <a href={result.url} target="_blank" rel="noreferrer">Buy Tickets</a>
                 </div>
               </Grid>
             ))}
@@ -67,7 +67,7 @@ function App() {
                   <p><span className="result-title">minPrice: </span>{result.maxPrice}</p>
                   <p><span className="result-title">maxPrice: </span>{result.maxPrice}</p>
                   <p><span className="result-title">Time Zone: </span>{result.timeZone}</p>
-                  <a href={result.url}>Buy Tickets</a>
+                  <a href={result.url} target="_blank" rel="noreferrer">Buy Tickets</a>
                 </div>
               </Grid>
             ))}
@@ -86,7 +86,7 @@ function App() {
                   <p><span className="result-title">minPrice: </span>{result.maxPrice}</p>
                   <p><span className="result-title">maxPrice: </span>{result.maxPrice}</p>
                   <p><span className="result-title">Time Zone: </span>{result.timeZone}</p>
-                  <a href={result.url}>Buy Tickets</a>
+                  <a href={result.url} target="_blank" rel="noreferrer">Buy Tickets</a>
                 </div>
               </Grid>
             ))}

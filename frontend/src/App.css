@@ -61,7 +61,7 @@
 }
 
 .result-card:hover {
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .result-card p {
@@ -73,16 +73,16 @@
   display: block;
   margin-top: 10px;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #b2afaf;
   border-radius: 5px;
   text-align: center;
   text-decoration: none;
-  color: #333;
+  color: #333333;
   font-weight: bold;
   transition: background-color 0.3s ease-in-out;
   background-color: #2ff166;
 }
 
 .result-card a:hover {
-  background-color: #eee;
+  background-color: #bdf2ce;
 }
