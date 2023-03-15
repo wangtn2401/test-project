@@ -40,9 +40,12 @@ function App() {
               <Grid item xs={4} key={index}>
                 <div className="result-card">
                   <p><b>{result.name}</b></p>
-                  <p><span className="result-title">Date: </span>{result.date}</p>
+                  <p><span className="result-title">Date: </span>{result.date.split("T")[0]}</p>
+                  <p><span className="result-title">Time: </span>{result.date.split("T")[1]}</p>
                   <p><span className="result-title">Venue: </span>{result.venue}</p>
-                  <p><span className="result-title">Price: </span>${result.minPrice} - ${result.maxPrice}</p>
+                  <p><span className="result-title">minPrice: </span>{result.maxPrice}</p>
+                  <p><span className="result-title">maxPrice: </span>{result.maxPrice}</p>
+                  <p><span className="result-title">Time Zone: </span>{result.timeZone}</p>
                   <a href={result.url}>Buy Tickets</a>
                 </div>
               </Grid>
@@ -56,9 +59,12 @@ function App() {
               <Grid item xs={4} key={index}>
                 <div className="result-card">
                   <p><b>{result.name}</b></p>
-                  <p><span className="result-title">Date: </span>{result.date}</p>
+                  <p><span className="result-title">Date: </span>{result.date.split("T")[0]}</p>
+                  <p><span className="result-title">Time: </span>{result.date.split("T")[1]}</p>
                   <p><span className="result-title">Venue: </span>{result.venue}</p>
-                  <p><span className="result-title">Price: </span>${result.minPrice} - ${result.maxPrice}</p>
+                  <p><span className="result-title">minPrice: </span>{result.maxPrice}</p>
+                  <p><span className="result-title">maxPrice: </span>{result.maxPrice}</p> 
+                  <p><span className="result-title">Time Zone: </span>{result.timeZone}</p>                  
                   <a href={result.url}>Buy Tickets</a>
                 </div>
               </Grid>
@@ -72,9 +78,12 @@ function App() {
               <Grid item xs={4} key={index}>
                 <div className="result-card">
                   <p><b>{result.name}</b></p>
-                  <p><span className="result-title">Date: </span>{result.date}</p>
+                  <p><span className="result-title">Date: </span>{result.date.split("T")[0]}</p>
+                  <p><span className="result-title">Time: </span>{result.date.split("T")[1]}</p>
                   <p><span className="result-title">Venue: </span>{result.venue}</p>
-                  <p><span className="result-title">Price: </span>${result.minPrice} - ${result.maxPrice}</p>
+                  <p><span className="result-title">minPrice: </span>{result.maxPrice}</p>
+                  <p><span className="result-title">maxPrice: </span>{result.maxPrice}</p>
+                  <p><span className="result-title">Time Zone: </span>{result.timeZone}</p>
                   <a href={result.url}>Buy Tickets</a>
                 </div>
               </Grid>
