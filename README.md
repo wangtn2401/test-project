@@ -1,6 +1,6 @@
 ### `How to run`
 
-1/ cd frontend && npm install
+1/ cd frontend && npm install && cd ..
 
 2/ docker-compose build
 
