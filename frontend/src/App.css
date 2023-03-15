@@ -1,0 +1,72 @@
+.App {
+  margin: 2rem;
+}
+
+input[type="text"] {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+button[type="submit"] {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.result-card {
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  height: 100%;
+}
+.result-card p:first-of-type {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+a {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #4caf50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+a:hover {
+  background-color: #3e8e41;
+}
+h2 {
+  margin: 2rem 0 1rem;
+}
+
+.stubHub-card {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #efb670;
+  height: 60%;
+}
+.seatGeek-card{
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #f1e099;
+  height: 60%;
+}
+.ticketMaster-card{
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #a6fc9e;
+  height: 60%;
+}

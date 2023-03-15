@@ -1,0 +1,24 @@
+version: "3.8"
+
+services:
+  flask:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_APP=app.py
+    volumes:
+      - .:/app
+  frontend:
+    restart: always
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.frontend
+    volumes:
+      - type: bind
+        source: ./frontend
+        target: /codebase
+    ports:
+      - "3000:3000"
+    depends_on:
+      - flask

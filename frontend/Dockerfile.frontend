@@ -1,0 +1,19 @@
+# Sử dụng base image của nodejs 16
+FROM node:16
+
+# Thiết lập working directory và copy package.json và package-lock.json vào trong container
+WORKDIR /codebase
+COPY package*.json ./
+
+# Cài đặt các dependencies cho ứng dụng ReactJS
+RUN npm install
+
+# Copy các file khác vào trong container
+COPY . /codebase/
+
+# Build ứng dụng ReactJS
+RUN npm run build
+
+# Chạy ứng dụng ReactJS
+CMD ["npm", "start"]
+
