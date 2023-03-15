@@ -65,8 +65,8 @@ function App() {
                   <p><span className="result-title">Time: </span>{result.date.split("T")[1]}</p>
                   <p><span className="result-title">Venue: </span>{result.venue}</p>
                   <p><span className="result-title">minPrice: </span>{result.maxPrice}</p>
-                  <p><span className="result-title">maxPrice: </span>{result.maxPrice}</p> 
-                  <p><span className="result-title">Time Zone: </span>{result.timeZone}</p>                  
+                  <p><span className="result-title">maxPrice: </span>{result.maxPrice}</p>
+                  <p><span className="result-title">Time Zone: </span>{result.timeZone}</p>
                   <a href={result.url}>Buy Tickets</a>
                 </div>
               </Grid>
