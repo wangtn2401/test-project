@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import Grid from "@mui/material/Grid";
 import "./App.css";
+import CircularProgress from '@mui/material/CircularProgress';
 
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -33,8 +34,12 @@ function App() {
         />
         <button type="submit">Search</button>
       </form>
-      {isLoading && <div className="loading">Loading...</div>}
-      <Grid container spacing={2}>
+      {isLoading && (
+        <div className="loading-container">
+          <CircularProgress />
+        </div>
+      )}
+      <Grid container spacing={2} padding={5}>
         <Grid item xs={12} >
           {/* <h2>SeatGeek Results</h2> */}
           <Grid container spacing={2} className="seatGeek-card">
