@@ -7,3 +7,5 @@
 3/ docker-compose up
 
 4/ go new url with ReactJS: http://localhost:3000/ or old url with : http://localhost:5000/
+
+5/ Test: search "ruby" when project is started
